@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "state_machine": [
+    "pending",
+    "spec_draft",
+    "spec_ready",
+    "human_approved",
+    "in_progress",
+    "review",
+    "done",
+    "rejected",
+    "blocked"
+  ],
+  "tasks": [
+    {
+      "id": "FW-001",
+      "title": "Download fin whale observations from OBIS, save CSV, plot georeferenced map",
+      "slug": "fin-whale-obis-map",
+      "description": "Write R code that downloads fin whale (Balaenoptera physalus) occurrence data from the OBIS database (obis.org), saves it in CSV format in the project root folder, and plots the collected data on a georeferenced map indicating the total number of observations.",
+      "source": "Developer request during onboarding (2026-09-29)",
+      "sdd": true,
+      "status": "done",
+      "spec_path": "specs/fin-whale-obis-map",
+      "scope": [
+        "R/**",
+        "run_fin_whales.R",
+        "tests/testthat/**",
+        "README.md",
+        ".claude/context/project-map.md"
+      ],
+      "approval": {
+        "required": true,
+        "approved_by": "developer (roberto@sapereia.com)",
+        "approved_at": "2026-09-29",
+        "notes": "Approved in chat: \"approve FW-001\". Assumptions A1-A4 and Q1 default accepted as written."
+      },
+      "documentation_required": true,
+      "documentation_status": "updated",
+      "documentation_targets": [
+        "README.md",
+        ".claude/context/project-map.md"
+      ],
+      "links": {
+        "issue": null,
+        "pr": null,
+        "branch": null
+      },
+      "created_at": "2026-09-29",
+      "updated_at": "2026-09-29"
+    }
+  ]
+}

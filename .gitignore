@@ -1,0 +1,14 @@
+# SDD rendered artifacts (markdown is the source of truth)
+specs/**/*.html
+history.html
+
+# macOS
+.DS_Store
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Read-only source kit (not versioned)
+sdd-onboarding-kit/
